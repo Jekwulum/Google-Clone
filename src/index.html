@@ -9,14 +9,17 @@
   <title>Document</title>
 </head>
 
-<body class="dark:bg-black">
-  <div class="conatiner mx-auto">
+<body class="dark:bg-[#202124] h-screen">
+
+  <!-- nav section -->
+  <div class="container mx-auto">
     <nav class="m-1">
       <ul class="flex justify-end space-x-2 items-center">
-        <li class="hover:cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full" onclick="toggleTheme()">
+        <li class="hover:cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full"
+          onclick="toggleTheme()">
           <svg xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-moon h-7 w-7 p-1 dark:text-gray-300" width="44" height="44"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="currentColor" stroke-linecap="round"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round"
             stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
@@ -51,6 +54,38 @@
       </ul>
     </nav>
 
+    <!-- main section -->
+    <div class="container mx-auto flex flex-col text-center items-center">
+      <div class="">
+        <h1 class="m-8 text-6xl font-bold text-gray-500 dark:text-gray-100">Google</h1>
+      </div>
+
+      <!-- search bar -->
+      <div></div>
+
+      <!-- two buttons -->
+      <div>
+        <button class="text-xs text-gray-100 pb-1 h-7 w-28 m-2 items-center bg-[#54565c] 
+          capitalize border-none rounded-sm">Google Search
+        </button>
+        <button class="text-xs text-gray-100 pb-1 h-7 w-28 m-2 items-center bg-[#54565c] 
+          capitalize border-none rounded-sm">I'm feeling lucky
+        </button>
+      </div>
+
+      <!-- texts -->
+      <div>
+        <p class="text-xs dark:text-gray-100">Google offered in:
+          <span class="text-indigo-400">
+            <a class="hover:underline" href="#">Hausa</a>
+            <a class="hover:underline" href="#">Igbo</a>
+            <a class="hover:underline" href="#">Èdè</a>
+            <a class="hover:underline" href="#">Yorùbá</a>
+            <a class="hover:underline" href="#">Nigerian Pidgin</a>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 </body>
 <script>

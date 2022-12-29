@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,56 @@
   <link rel="stylesheet" href="output.css">
   <title>Document</title>
 </head>
-<body>
-  
+
+<body class="dark:bg-black">
+  <div class="conatiner mx-auto">
+    <nav class="m-1">
+      <ul class="flex justify-end space-x-2 items-center">
+        <li class="hover:cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full" onclick="toggleTheme()">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-moon h-7 w-7 p-1 dark:text-gray-300" width="44" height="44"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="currentColor" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+          </svg>
+        </li>
+        <li class="hover:underline dark:text-gray-300 text-xs"><a href="www.gmail.com">Gmail</a></li>
+        <li class="hover:underline dark:text-gray-300 text-xs"><a href="#">Images</a></li>
+        <li class="hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-grid-dots dark:text-white h-7 w-7 p-1.5" width="44" height="44"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="5" cy="5" r="1" />
+              <circle cx="12" cy="5" r="1" />
+              <circle cx="19" cy="5" r="1" />
+              <circle cx="5" cy="12" r="1" />
+              <circle cx="12" cy="12" r="1" />
+              <circle cx="19" cy="12" r="1" />
+              <circle cx="5" cy="19" r="1" />
+              <circle cx="12" cy="19" r="1" />
+              <circle cx="19" cy="19" r="1" />
+            </svg>
+          </a>
+        </li>
+        <li class="hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full">
+          <a href="#">
+            <img class="h-7 w-7 p-1" src="./img/pic_profile_re_7g2h.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
 </body>
+<script>
+  const toggleTheme = () => {
+    const htmlElement = document.querySelector('html').className;
+    document.querySelector('html').className = htmlElement === 'dark' ? '' : 'dark';
+  };
+</script>
+
 </html>

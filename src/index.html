@@ -12,7 +12,7 @@
 <body class="dark:bg-[#202124] h-screen">
 
   <!-- nav section -->
-  <div class="container mx-auto">
+  <div class="mx-auto">
     <nav class="m-1">
       <ul class="flex justify-end space-x-2 items-center">
         <!-- <li class="hover:cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full"
@@ -55,7 +55,7 @@
     </nav>
 
     <!-- main section -->
-    <form class="container mx-auto flex flex-col text-center items-center h-32 mt-44 w-4/5">
+    <form class="container mx-auto flex flex-col text-center items-center mt-24 w-4/5">
       <div class="bg-red-400">
         <img class="h-28" src="img/google-img.png" alt="">
       </div>
@@ -86,7 +86,7 @@
       </div>
 
       <!-- two buttons -->
-      <div class="flex mt-8 flex-col space-y-2 md:flex-row md:space-x-3 md:space-y-0">
+      <div class="flex mt-7 flex-col space-y-2 md:flex-row md:space-x-3 md:space-y-0">
         <button class="p-3 text-gray-400 ring-gray-200 round-md hover:ring-1 focus:outline-none">Google Search
         </button>
 
@@ -96,7 +96,7 @@
 
       <!-- texts -->
       <div>
-        <p class="text-xs dark:text-gray-100">Google offered in:
+        <p class="text-xs dark:text-gray-100 mt-2">Google offered in:
           <span class="text-indigo-400">
             <a class="hover:underline" href="#">Hausa</a>
             <a class="hover:underline" href="#">Igbo</a>
@@ -109,10 +109,26 @@
     </form>
 
     <!-- footer -->
-    <footer>
+    <footer class="bg-gray-100 text-gray-500 w-full mt-16 md:mt-36 px-3 text-xs">
       <div>Nigeria</div>
       <hr>
-      
+      <div class="grid grid-cols-1 md:grid-cols-2 pb-4 pt-2">
+
+        <div class="flex space-x-4 justify-center md:justify-start">
+          <p class="cursor-pointer hover:underline">Advertising</p>
+          <p class="cursor-pointer hover:underline">Business</p>
+          <p class="cursor-pointer hover:underline">How Search works</p>
+          <p class="cursor-pointer hover:underline">About</p>
+        </div>
+
+        <div class="flex space-x-4 justify-center md:justify-end">
+          <p class="cursor-pointer hover:underline">Privacy</p>
+          <p class="cursor-pointer hover:underline">Terms</p>
+          <p class="cursor-pointer hover:underline">Settings</p>
+        </div>
+
+      </div>
+
     </footer>
   </div>
 </body>

@@ -15,7 +15,7 @@
   <div class="container mx-auto">
     <nav class="m-1">
       <ul class="flex justify-end space-x-2 items-center">
-        <li class="hover:cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full"
+        <!-- <li class="hover:cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full"
           onclick="toggleTheme()">
           <svg xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-moon h-7 w-7 p-1 dark:text-gray-300" width="44" height="44"
@@ -24,7 +24,7 @@
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
           </svg>
-        </li>
+        </li> -->
         <li class="hover:underline dark:text-gray-300 text-xs"><a href="www.gmail.com">Gmail</a></li>
         <li class="hover:underline dark:text-gray-300 text-xs"><a href="#">Images</a></li>
         <li class="hover:bg-gray-300 dark:hover:bg-gray-700 border-none rounded-full">
@@ -55,21 +55,42 @@
     </nav>
 
     <!-- main section -->
-    <div class="container mx-auto flex flex-col text-center items-center">
-      <div class="">
-        <h1 class="m-8 text-6xl font-bold text-gray-500 dark:text-gray-100">Google</h1>
+    <form class="container mx-auto flex flex-col text-center items-center h-32 mt-44 w-4/5">
+      <div class="bg-red-400">
+        <img class="h-28" src="img/google-img.png" alt="">
       </div>
 
       <!-- search bar -->
-      <div></div>
+      <div class="flex items-center w-full border border-gray-200 rounded-full 
+            py-3 px-3 hover:shadow-lg max-w-2xl mt-4">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search h-5 text-gray-500 hover:cursor-pointer" width="44" height="44"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+
+        <input type="text"  class="flex-grow border-none focus:outline-none" >
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 hover:cursor-pointer">
+          <path d="M7 4a3 3 0 016 0v6a3 3 0 11-6 0V4z" />
+          <path d="M5.5 9.643a.75.75 0 00-1.5 0V10c0 3.06 2.29 5.585 5.25 5.954V17.5h-1.5a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-1.5v-1.546A6.001 6.001 0 0016 10v-.357a.75.75 0 00-1.5 0V10a4.5 4.5 0 01-9 0v-.357z" />
+        </svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 hover:cursor-pointer">
+          <path fill-rule="evenodd" d="M1 8a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 018.07 3h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0016.07 6H17a2 2 0 012 2v7a2 2 0 01-2 2H3a2 2 0 01-2-2V8zm13.5 3a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM10 14a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+        </svg>
+        
+      </div>
 
       <!-- two buttons -->
-      <div>
-        <button class="text-xs text-gray-100 pb-1 h-7 w-28 m-2 items-center bg-[#54565c] 
-          capitalize border-none rounded-sm">Google Search
+      <div class="flex mt-8 flex-col space-y-2 md:flex-row md:space-x-3 md:space-y-0">
+        <button class="p-3 text-gray-400 ring-gray-200 round-md hover:ring-1 focus:outline-none">Google Search
         </button>
-        <button class="text-xs text-gray-100 pb-1 h-7 w-28 m-2 items-center bg-[#54565c] 
-          capitalize border-none rounded-sm">I'm feeling lucky
+
+        <button class="p-3 text-gray-400 ring-gray-200 round-md hover:ring-1 focus:outline-none">I'm feeling lucky
         </button>
       </div>
 
@@ -85,7 +106,14 @@
           </span>
         </p>
       </div>
-    </div>
+    </form>
+
+    <!-- footer -->
+    <footer>
+      <div>Nigeria</div>
+      <hr>
+      
+    </footer>
   </div>
 </body>
 <script>
